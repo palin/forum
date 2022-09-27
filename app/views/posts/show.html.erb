@@ -1,6 +1,9 @@
+<%= turbo_stream_from @post %>
+
 <p style="color: green"><%= notice %></p>
 
 <%= render @post %>
+<%= render "posts/comments", post: @post %>
 
 <div>
   <%= link_to "Edit this post", edit_post_path(@post) %> |
